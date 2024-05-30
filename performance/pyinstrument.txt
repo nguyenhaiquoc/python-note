@@ -1,0 +1,36 @@
+
+  _     ._   __/__   _ _  _  _ _/_   Recorded: 23:48:35  Samples:  5664
+ /_//_/// /_\ / //_// / //_'/ //     Duration: 7.779     CPU time: 5.684
+/   _/                      v4.6.2
+
+Program: /home/hai/.cache/pypoetry/virtualenvs/pythopn-snippet-uURZcC3k-py3.10/bin/pyinstrument -o pyinstrument.svg complex.py
+
+7.778 <module>  complex.py:1
+└─ 7.778 complex_function  complex.py:11
+   ├─ 5.775 fibonacci  complex.py:5
+   │  └─ 5.774 fibonacci  complex.py:5
+   │     └─ 5.774 fibonacci  complex.py:5
+   │        └─ 5.772 fibonacci  complex.py:5
+   │           └─ 5.767 fibonacci  complex.py:5
+   │              └─ 5.755 fibonacci  complex.py:5
+   │                 └─ 5.741 fibonacci  complex.py:5
+   │                    └─ 5.711 fibonacci  complex.py:5
+   │                       └─ 5.654 fibonacci  complex.py:5
+   │                          └─ 5.578 fibonacci  complex.py:5
+   │                             ├─ 5.342 fibonacci  complex.py:5
+   │                             │  ├─ 4.923 fibonacci  complex.py:5
+   │                             │  │  ├─ 4.135 fibonacci  complex.py:5
+   │                             │  │  │  ├─ 2.997 fibonacci  complex.py:5
+   │                             │  │  │  │  ├─ 1.715 fibonacci  complex.py:5
+   │                             │  │  │  │  │  ├─ 0.954 [self]  complex.py
+   │                             │  │  │  │  │  └─ 0.761 fibonacci  complex.py:5
+   │                             │  │  │  │  │     ├─ 0.543 [self]  complex.py
+   │                             │  │  │  │  │     └─ 0.218 fibonacci  complex.py:5
+   │                             │  │  │  │  │        └─ 0.183 [self]  complex.py
+   │                             │  │  │  │  └─ 1.282 [self]  complex.py
+   │                             │  │  │  └─ 1.138 [self]  complex.py
+   │                             │  │  └─ 0.789 [self]  complex.py
+   │                             │  └─ 0.419 [self]  complex.py
+   │                             └─ 0.236 [self]  complex.py
+   └─ 2.002 sleep  <built-in>
+

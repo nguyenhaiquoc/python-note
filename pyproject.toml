@@ -9,6 +9,9 @@ packages = [{include = "pythopn_snippet"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pendulum = "^3.0.0"
+pyinstrument = "^4.6.2"
+ruff = "^0.4.6"
+py-spy = "^0.3.14"
 
 
 [build-system]
