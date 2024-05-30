@@ -8,6 +8,7 @@ packages = [{include = "pythopn_snippet"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pendulum = "^3.0.0"
 
 
 [build-system]

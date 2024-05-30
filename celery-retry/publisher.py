@@ -3,8 +3,7 @@ import tasks
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 
-@retry(stop=stop_after_attempt(10),
-       wait=wait_exponential(multiplier=1, min=4, max=10))
+@retry(stop=stop_after_attempt(10), wait=wait_exponential(multiplier=1, min=4, max=10))
 def publish_add_number_tenacity(x, y):
     tasks.add_numbers.apply_async((x, y), retry=False)
 
