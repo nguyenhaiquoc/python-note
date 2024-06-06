@@ -12,6 +12,7 @@ pendulum = "^3.0.0"
 pyinstrument = "^4.6.2"
 ruff = "^0.4.6"
 py-spy = "^0.3.14"
+pytest = "^8.2.2"
 
 
 [build-system]
