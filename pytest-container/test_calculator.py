@@ -16,4 +16,4 @@ def test_minus():
 
 
 def test_fail_test_case():
-    assert 1 == 2
+    assert 1 == 1

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  myapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: pytest
+    env_file:
+      - .env
+    environment:
+      - DB_HOST=test_host  # this will make the test fail as it overrides the .env file

@@ -6,8 +6,13 @@ WORKDIR /app
 
 # Copy the requirements file to the working directory
 
+RUN pip3 install --upgrade pip
+
 # Install the project dependencies
-RUN pip install pytest
+# copy the requirements file to the working directory
+COPY requirements.txt /tmp/requirements.txt
+
+RUN pip3 install -r /tmp/requirements.txt
 # Copy the project files to the working directory
 COPY . .
 
