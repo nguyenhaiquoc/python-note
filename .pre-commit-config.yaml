@@ -21,6 +21,16 @@ repos:
         require_serial: true
         additional_dependencies: []
         minimum_pre_commit_version: "2.9.2"
+      - id: sort-imports
+        name: sort-imports
+        description: "Run 'ruff' for extremely fast Python linting"
+        entry: poetry run ruff check --select I --fix
+        language: python
+        types_or: [python, pyi]
+        args: []
+        require_serial: true
+        additional_dependencies: []
+        minimum_pre_commit_version: "2.9.2"
       # Run the formatter.
       - id: ruff-format
         name: ruff-format
