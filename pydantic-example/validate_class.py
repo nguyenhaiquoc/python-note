@@ -1,6 +1,6 @@
-from pydantic import BaseModel  # v2
 import logging
 
+from pydantic import BaseModel  # v2
 
 # config basic logging
 logging.basicConfig(level=logging.INFO)
